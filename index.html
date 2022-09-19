@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web 3</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="content">
+
+    <header id="header" class="sm-flex-order-1">
+        <div class="container with-x-padding">
+            <div class="inner-wrapper">
+                <a href="/"><img alt="logo" class="logo" src="/static/logo.svg"></a>
+                <h1>Какой-то сайт</h1>
+            </div>
+        </div>
+    </header>
+
+    <div id="main-navigation" class="container with-x-padding sm-flex-order-2">
+        <nav>
+            <ul>
+                <li><a href="/first.html">Ссылка меню 1</a></li>
+                <li><a href="/second.html">Ссылка меню 2</a></li>
+                <li><a href="/third.html">Ссылка меню 3</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="links-list" class="container with-x-padding sm-flex-order-3">
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=eYuUAGXN0KM" target="_blank">Ссылка 1</a></li>
+            <li><a href="https://www.youtube.com/watch?v=yPYZpwSpKmA" target="_blank">Ссылка 2</a></li>
+            <li><a href="https://www.youtube.com/watch?v=_UGcwmafuR0" target="_blank">Ссылка 3</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Ссылка 4</a></li>
+        </ul>
+    </div>
+
+    <div id="table" class="container with-x-padding sm-flex-order-5">
+        <table>
+            <thead>
+            <tr>
+                <th>Название</th>
+                <th>Описание</th>
+                <th>Количество</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Какое-то название 1</td>
+                <td>Какое-то описание для 1</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Какое-то название 2</td>
+                <td>Какое-то описание для 2</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Какое-то название 3</td>
+                <td>Какое-то описание для 3</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td colspan="2">Какое-то название и описание для 3</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Какое-то название 3</td>
+                <td>Какое-то описание для 3</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Какое-то название 3</td>
+                <td>Какое-то описание для 3</td>
+                <td>6</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="form" class="container with-x-padding sm-flex-order-4">
+        <form action="/" method="get">
+            <div>
+                <label>
+                    Имя <br>
+                    <input name="name" placeholder="Введите ваше имя" required type="text">
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Email <br>
+                    <input name="email" placeholder="Введите вашу почту" required type="email">
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Дата рождения <br>
+                    <input name="birthday" required type="date">
+                </label>
+            </div>
+
+            <div>
+                Пол <br>
+                <label>
+                    <input checked name="gender" required type="radio" value="male">
+                    Мужской
+                </label> <br>
+                <label>
+                    <input name="gender" required type="radio" value="female">
+                    Женский
+                </label>
+            </div>
+
+            <div>
+                Количество конечностей <br>
+                <label>
+                    <input name="limbs-number" required type="radio" value="1"> 1
+                </label> <br>
+                <label>
+                    <input name="limbs-number" required type="radio" value="2"> 2
+                </label> <br>
+                <label>
+                    <input name="limbs-number" required type="radio" value="3"> 3
+                </label> <br>
+                <label>
+                    <input name="limbs-number" required type="radio" value="4"> 4
+                </label> <br>
+                <label>
+                    <input name="limbs-number" required type="radio" value="5"> 5
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Сверхспособности <br>
+                    <select multiple name="superpowers" required>
+                        <option value="immortality">Бессмертие</option>
+                        <option value="noclip">Прохождение сквозь стены</option>
+                        <option value="levitation">Левитация</option>
+                    </select>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Биография <br>
+                    <textarea cols="30" name="biography" placeholder="Введите вашу биографию" rows="5"></textarea>
+                </label> <br>
+
+                <label>
+                    <input name="agreement" required type="checkbox">
+                    С контрактом ознакомлен(a)
+                </label>
+            </div>
+
+            <div>
+                <input type="submit" value="Отправить">
+            </div>
+        </form>
+    </div>
+
+    <footer id="footer" class="sm-flex-order-6">
+        <div class="container with-x-padding">
+            &copy; Халилов Айяр 2022
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* --- Utilities start --- */
+* {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container.with-x-padding {
+    padding: 0 1rem;
+}
+
+/* --- Utilities end --- */
+
+
+
+/* --- Header start --- */
+#header {
+    padding: 1rem 0;
+    background-color: darksalmon;
+}
+
+#header .inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .inner-wrapper .logo {
+    height: 4rem;
+}
+/* --- Header end --- */
+
+
+/* --- Navigation start --- */
+#main-navigation nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+/* --- Navigation end --- */
+
+
+/* --- List of links start*/
+#links-list ul {
+    list-style: none;
+    /*font-size: 1.2rem;*/
+}
+/* --- List of links end */
+
+
+/* --- Table start --- */
+#table table {
+    border-collapse: separate;
+}
+#table table td, th {
+    text-align: left;
+    border: 1px solid black;
+    padding: 0.5em 1em;
+}
+#table table tbody tr:nth-child(even) {
+    background-color: #dacdc0;
+}
+/* --- Table end ---*/
+
+
+/* --- Form start --- */
+#form form > *:not(:last-child){
+    margin-bottom: 0.5em;
+}
+/* --- Form end --- */
+
+
+/* --- Footer start --- */
+#footer {
+    background-color: darksalmon;
+    padding: 1rem 0;
+}
+/* --- Footer end --- */
+
+
+/* --- Media --- */
+@media screen and (max-width: 500px) {
+    .sm-flex-order-1 {
+        order: 1;
+    }
+
+    .sm-flex-order-2 {
+        order: 2;
+    }
+
+    .sm-flex-order-3 {
+        order: 3;
+    }
+
+    .sm-flex-order-4 {
+        order: 4;
+    }
+
+    .sm-flex-order-5 {
+        order: 5;
+    }
+
+    .sm-flex-order-6 {
+        order: 6;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    #main-navigation nav ul {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 2rem;
+        flex-wrap: wrap;
+    }
+}
