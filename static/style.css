@@ -63,7 +63,7 @@
 
 /* --- Table start --- */
 #table table {
-    border-collapse: separate;
+    width: 100%;
 }
 #table table td, th {
     text-align: left;
