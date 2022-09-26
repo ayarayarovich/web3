@@ -91,7 +91,7 @@
 
 
 /* --- Media --- */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
     .sm-flex-order-end {
         order: 99999999999999;
     }
@@ -103,7 +103,7 @@
     }
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 401px) {
     #main-navigation nav ul {
         flex-direction: row;
         justify-content: center;
